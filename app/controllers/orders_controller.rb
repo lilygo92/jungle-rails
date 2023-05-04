@@ -1,8 +1,23 @@
 class OrdersController < ApplicationController
 
   def show
+  end
+
+  def items
+    @items = order.line_items.map{| item | { 
+      product: Product.select(:id, :image, :name, :description).find(item.product_id),
+      line_item: {total: item[:total_price_cents], item_price: item[:item_price_cents], quantity: item[:quantity]}
+    } 
+  }
+  end
+
+  helper_method :items
+
+  def order
     @order = Order.find(params[:id])
   end
+
+  helper_method :order
 
   def create
     charge = perform_stripe_charge
