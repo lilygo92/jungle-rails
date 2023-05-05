@@ -1,2 +1,11 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1 class="dashboard_head" style="text-align: center">Admin Dashboard</h1>
+
+
+<div class="d-flex flex-column align-items-center dashboard">
+  <p>Total products: </span><%= @product_count %><span></p>
+
+  <p>Total categories: </span><%= @category_count %><span></p>
+  <form action="<%= admin_products_path %>">
+    <button class="btn btn-success">View and edit products</button>
+  </form>
+</div>
