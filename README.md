@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 6.1. Made by adding new features to an existing template, for the purpose of gaining proficiency with Ruby on Rails, Rspec, and Cypress. This project was completed as a part of the Lighthouse Labs Web Development bootcamp.
 
 ## Screenshots
 ![Homepage](https://user-images.githubusercontent.com/107281344/237021201-5be13f77-17a2-41b2-afe1-b512703d1dbc.png)
